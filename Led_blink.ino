@@ -19,7 +19,6 @@ Led_blink ledError(LED_PIN);
 uint8 ix= 0;
 
 void setup(){
-
 	ledError.addPattern(100, 2500);
 	ledError.addPattern(300, 1000);
 	ledError.addPattern(1000, 300);
@@ -29,7 +28,6 @@ void setup(){
 
 void loop(){
 	ledError.startBlink(ix);
-
 	delay(20000); //20second delay
 	if (ix++ >= 4)	{
 		ix = 0;
