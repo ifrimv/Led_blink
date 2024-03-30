@@ -17,13 +17,18 @@ This library facilitates LED blinking with specified patterns on ESP8266 microco
 
 ```cpp
 #include <Led_blink.h>
+/*
+Pattern example
+ /''\_____/''\_____/''\____________/''\_...
+ |-    repeat (3)    -| pause time |
+*/
 
 // Create an instance of Led_blink
 Led_blink led(LED_PIN);
 
 void setup() {
   //add pattern
-  ledError.addPattern(onTime, offTime, repeat, pauseTime);;
+  led.addPattern(onTime, offTime, repeat, pauseTime);;
   //Blink LED with specified pattern
   led.startBlink(ix);
 }
