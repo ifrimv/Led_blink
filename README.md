@@ -1,11 +1,33 @@
 # Led_blink
-Led blink
-Arduino Led blink library for ESP8266. 
-Blink led with specified pattern.
-Parameter of one pattern:
-Time onTime, offTime, repeat and pauseTime
-If repeat = 0  pauseTime = offTime
-Pattern example
- /''\_____/''\_____/''\____________/''\_...
- |-    repeat (3)    -| pause time |
 
+Arduino Led blink library for ESP8266.
+
+## Description
+
+This library facilitates LED blinking with specified patterns on ESP8266 microcontrollers. It allows you to control the duration of LED on-time, off-time, repetitions, and pause time between blinks.
+
+### Pattern Parameters
+
+- `onTime`: Duration of LED being on.
+- `offTime`: Duration of LED being off.
+- `repeat`: Number of times the pattern repeats. If `repeat = 0`, `pauseTime` is used instead of `offTime`.
+- `pauseTime`: Duration of pause between pattern repetitions.
+
+### Example
+
+```cpp
+#include <Led_blink.h>
+
+// Create an instance of Led_blink
+Led_blink led(LED_PIN);
+
+void setup() {
+  //add pattern
+  ledError.addPattern(onTime, offTime, repeat, pauseTime);;
+  //Blink LED with specified pattern
+  led.startBlink(ix);
+}
+
+void loop() {
+	
+}
