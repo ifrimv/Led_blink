@@ -19,10 +19,10 @@ Led_blink ledError(LED_PIN);
 uint8 ix= 0;
 
 void setup(){
-	ledError.addPattern(100, 2500);
+	ledError.addPattern(100, 2500);			//0.1s On, 2.5s Off
 	ledError.addPattern(300, 1000);
 	ledError.addPattern(1000, 300);
-	ledError.addPattern(300, 400, 2, 2500);
+	ledError.addPattern(300, 400, 2, 2500);	//0.3s On, 0.4s Off, repeat 2 time, pause 2.5s
 	ledError.addPattern(300, 300, 0, 0);
 }
 

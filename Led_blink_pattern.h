@@ -1,4 +1,4 @@
-// Led_blink.h
+// Led_blink_pattern.h
 
 #ifndef LED_BLINK_H
 #define LED_BLINK_H
@@ -8,7 +8,6 @@
 #else
 #include "WProgram.h"
 #endif
-
 
 #include <Arduino.h>
 #include <Ticker.h>

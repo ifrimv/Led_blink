@@ -1,4 +1,4 @@
-# Led_blink
+# Led blink
 
 Arduino Led blink library for ESP8266.
 
@@ -16,12 +16,13 @@ This library facilitates LED blinking with specified patterns on ESP8266 microco
 ### Example
 
 ```cpp
-#include <Led_blink.h>
 /*
 Pattern example
  /''\_____/''\_____/''\____________/''\_...
  |-    repeat (3)    -| pause time |
 */
+#include <Led_blink_pattern.h>
+
 
 // Create an instance of Led_blink
 Led_blink led(LED_PIN);

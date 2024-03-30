@@ -4,7 +4,6 @@
 #include "led_blink_pattern.h"
 
 
-
 Led_blink::Led_blink(int pin) {
 	ledPin = pin;
 	isBlinking = false;
@@ -22,8 +21,6 @@ void Led_blink::addPattern(unsigned long onTime, unsigned long offTime, uint8 re
 		totalPatterns++;
 	}
 }
-
-
 
 void Led_blink::startBlink(uint8 ix) {
 	stopBlink();
@@ -83,6 +80,3 @@ void Led_blink::toggle() {
 		}
 	}
 }
-
-
-//Led_blink Led_blink;
